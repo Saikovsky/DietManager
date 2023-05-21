@@ -1,11 +1,12 @@
 #include "MealProvider.hpp"
 #include <fstream>
-#include "Logger.hpp"
+
 
 MealProvider::MealProvider(std::string binaryName) : binaryName(binaryName)
 {
 	//auto result = system("")
 	//Automating this with either json + fbs Parser or explicit call for flatc or leave manual flatc bin generation
+	//Maybe filesystem?
 }
 
 

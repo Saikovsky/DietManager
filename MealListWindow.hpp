@@ -1,6 +1,6 @@
 #pragma once
 #include <qmainwindow.h>
-#include "qlistwidget.h"
+#include <qlistwidget.h>
 
 class MealListWindow : public QListWidget
 {

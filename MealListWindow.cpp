@@ -1,6 +1,6 @@
 #include "MealListWindow.hpp"
-#include "MealProvider.hpp"
-#include "Logger.hpp"
+#include "utils/MealProvider.hpp"
+#include "utils/Logger.hpp"
 
 MealListWindow::MealListWindow(QWidget* parent) : QListWidget(parent)
 {

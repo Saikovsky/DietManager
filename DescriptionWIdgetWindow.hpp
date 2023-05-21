@@ -18,7 +18,7 @@ private:
 	QLabel* titleLabel;
 	QLabel* ingredientsLabel;
 
-	const QString descriptionString{ "Description: " };
+	const QString descriptionString{ "Description:\n" };
 	const QString categoryString{ "Category: " };
 	const QString titleString{ "Title: " };
 	const QString ingredientsString{ "Ingredients: " };

@@ -94,22 +94,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DescriptionWIdgetWindow.cpp" />
-    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="MealListWindow.cpp" />
-    <ClCompile Include="MealProvider.cpp" />
+    <ClCompile Include="utils\Logger.cpp" />
+    <ClCompile Include="utils\MealProvider.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="json\sample_breakfast.json" />
     <None Include="schemas\meals.fbs" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="utils\Logger.hpp" />
+    <ClInclude Include="utils\MealProvider.hpp" />
     <QtMoc Include="DescriptionWIdgetWindow.hpp" />
-    <ClInclude Include="Logger.hpp" />
     <QtMoc Include="MainWindow.hpp" />
     <QtMoc Include="MealListWindow.hpp" />
-    <ClInclude Include="MealProvider.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

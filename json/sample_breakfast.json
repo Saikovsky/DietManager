@@ -20,7 +20,7 @@
 					"volume_ml": 10.0
 				}
 			],
-			"description": "Heat up frying pan, pour oil, throw chopped bacon and oil, fry untill cripsy"
+			"description": "Heat up frying pan, pour oil, throw chopped bacon and oil, fry untill cripsy \n asdasd"
 		},
 		{
 			"meal_type": "Breakfast",
@@ -43,6 +43,43 @@
 				}
 			],
 			"description": "Heat up frying pan, pour oil, throw chopped bacon and oil, fry untill cripsy"
+		},
+		{
+			"meal_type": "Breakfast",
+			"title": "Fried Chicken",
+			"ingredients": [
+				{
+					"name": "Chicken",
+					"weight_g": 500.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Onion",
+					"weight_g": 100.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Olive Oil",
+					"weight_g": 0.0,
+					"volume_ml": 10.0
+				},
+				{
+					"name": "Paprika",
+					"weight_g": 250.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Rice",
+					"weight_g": 120.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Carrot",
+					"weight_g": 100.0,
+					"volume_ml": 0.0
+				}
+			],
+			"description": "1.Preheat pan, pour some oil, add chopped onion\n2.After while add some water and sliced carrots and paprika\n3.Throw some diced chicken\n4.Prepare rice however you want\n5.Mix rice with everything in pan GG"
 		}
 	]
 }

@@ -27,15 +27,15 @@
     <Filter Include="Meals">
       <UniqueIdentifier>{a8827365-be9f-4a65-a09a-2f47ac66bd6f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{cbda940f-ddaa-43a7-bac5-158ee3db8766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{488043a9-7e7c-451c-9863-1253b29ad759}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MealProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MealListWindow.cpp">
@@ -47,6 +47,12 @@
     <ClCompile Include="DescriptionWIdgetWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="utils\MealProvider.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Logger.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="schemas\meals.fbs">
@@ -57,11 +63,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Logger.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="utils\Logger.hpp">
+      <Filter>Header Files\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="MealProvider.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="utils\MealProvider.hpp">
+      <Filter>Header Files\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

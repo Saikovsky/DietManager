@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../generated/meals_generated.h"
+#include "Logger.hpp"
 
 class MealProvider
 {
@@ -9,5 +10,4 @@ public:
 	const Meals::Meals* getMeal();
 private:
 	std::string binaryName;
-	
 };
