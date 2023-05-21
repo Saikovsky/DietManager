@@ -5,11 +5,13 @@
 MealProvider::MealProvider(std::string binaryName) : binaryName(binaryName)
 {
 	//auto result = system("")
+	//Automating this with either json + fbs Parser or explicit call for flatc or leave manual flatc bin generation
 }
 
 
 const Meals::Meals* MealProvider::getMeal()
 {
+	//Maybe use std::filesystem
 	Logger log;
 	try
 	{
