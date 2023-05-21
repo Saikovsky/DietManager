@@ -1,0 +1,26 @@
+
+namespace Meals;
+
+enum MealType:byte { Breakfast = 0, secndBreakfast = 1, Dinner = 2, AfternoonSnack = 3, Supper = 4 }
+
+table Meal
+{
+	meal_type:MealType;
+	title:string;
+	ingredients:[Ingredient];
+	description:string;
+}
+
+table Ingredient
+{
+	name:string;
+	weight_g:float;
+	volume_ml:float;
+}
+
+table Meals
+{
+	meals:[Meal];
+}
+
+root_type Meals;

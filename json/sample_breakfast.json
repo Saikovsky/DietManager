@@ -1,0 +1,48 @@
+{
+	"meals": [
+		{
+			"meal_type": "Breakfast",
+			"title": "Sample Breakfast",
+			"ingredients": [
+				{
+					"name": "Onion",
+					"weight_g": 150.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Bacon",
+					"weight_g": 50.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Oil",
+					"weight_g": 0.0,
+					"volume_ml": 10.0
+				}
+			],
+			"description": "Heat up frying pan, pour oil, throw chopped bacon and oil, fry untill cripsy"
+		},
+		{
+			"meal_type": "Breakfast",
+			"title": "Sample Breakfast2",
+			"ingredients": [
+				{
+					"name": "Onion2",
+					"weight_g": 150.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Bacon",
+					"weight_g": 50.0,
+					"volume_ml": 0.0
+				},
+				{
+					"name": "Oil",
+					"weight_g": 0.0,
+					"volume_ml": 10.0
+				}
+			],
+			"description": "Heat up frying pan, pour oil, throw chopped bacon and oil, fry untill cripsy"
+		}
+	]
+}
