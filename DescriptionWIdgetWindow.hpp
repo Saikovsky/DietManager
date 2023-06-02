@@ -3,6 +3,7 @@
 #include <qwidget.h>
 #include <QLabel>
 #include <qlistwidget.h>
+#include <qscrollarea.h>
 
 class DescriptionWidgetWindow : public QWidget
 {
@@ -17,6 +18,7 @@ private:
 	QLabel* categoryLabel;
 	QLabel* titleLabel;
 	QLabel* ingredientsLabel;
+	QScrollArea* descriptionScrollArea;
 
 	const QString descriptionString{ "Description:\n" };
 	const QString categoryString{ "Category: " };
@@ -24,4 +26,6 @@ private:
 	const QString ingredientsString{ "Ingredients: " };
 
 	QFrame* frame;
+
+	void prepareLayout();
 };

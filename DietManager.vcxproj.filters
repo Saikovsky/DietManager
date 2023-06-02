@@ -53,12 +53,18 @@
     <ClCompile Include="utils\Logger.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
+    <ClCompile Include="MealAddButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MealAddPopup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="schemas\meals.fbs">
       <Filter>Schemas</Filter>
     </None>
-    <None Include="json\sample_breakfast.json">
+    <None Include="json\meals.json">
       <Filter>Meals</Filter>
     </None>
   </ItemGroup>
@@ -78,6 +84,12 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="DescriptionWIdgetWindow.hpp">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MealAddButton.hpp">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MealAddPopup.hpp">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

@@ -4,7 +4,7 @@
 
 class MealListWindow : public QListWidget
 {
-Q_OBJECT
+	Q_OBJECT
 public:
 	explicit MealListWindow(QWidget* parent = nullptr);
 

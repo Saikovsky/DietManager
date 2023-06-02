@@ -96,15 +96,19 @@
     <ClCompile Include="DescriptionWIdgetWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MealAddButton.cpp" />
+    <ClCompile Include="MealAddPopup.cpp" />
+    <QtMoc Include="MealAddPopup.hpp" />
     <ClCompile Include="MealListWindow.cpp" />
     <ClCompile Include="utils\Logger.cpp" />
     <ClCompile Include="utils\MealProvider.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="json\sample_breakfast.json" />
+    <None Include="json\meals.json" />
     <None Include="schemas\meals.fbs" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="MealAddButton.hpp" />
     <ClInclude Include="utils\Logger.hpp" />
     <ClInclude Include="utils\MealProvider.hpp" />
     <QtMoc Include="DescriptionWIdgetWindow.hpp" />
