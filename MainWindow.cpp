@@ -26,5 +26,5 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent)
 	//cww = new cll...
 
 	QObject::connect(mlw, SIGNAL(itemClicked(QListWidgetItem*)), dww, SLOT(handleItemClicked(QListWidgetItem*)));
-	QObject::connect(mab, SIGNAL(pressed()), mapop, SLOT(exec()));
+	QObject::connect(mab, SIGNAL(pressed()), mapop, SLOT(open()));
 }
