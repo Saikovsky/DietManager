@@ -101,6 +101,7 @@
     <QtMoc Include="MealAddPopup.hpp" />
     <ClCompile Include="MealListWindow.cpp" />
     <ClCompile Include="utils\Logger.cpp" />
+    <ClCompile Include="utils\MealSaver.cpp" />
     <ClCompile Include="utils\MealProvider.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +111,7 @@
   <ItemGroup>
     <QtMoc Include="MealAddButton.hpp" />
     <ClInclude Include="utils\Logger.hpp" />
+    <ClInclude Include="utils\MealSaver.hpp" />
     <ClInclude Include="utils\MealProvider.hpp" />
     <QtMoc Include="DescriptionWIdgetWindow.hpp" />
     <QtMoc Include="MainWindow.hpp" />

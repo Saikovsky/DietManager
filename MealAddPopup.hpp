@@ -13,10 +13,12 @@ signals:
 public slots:
 	void addItem();
 	void cleanUp();
+	void removeItem();
 private:
 	QGroupBox* formGroupBox;
 	QDialogButtonBox* buttonBox;
 	QPushButton* addIngredientButton;
+	QPushButton* removeIngredientButton;
 	QFormLayout* layout;
 	QHBoxLayout* ingredientLayout;
 	void createButtonBox();

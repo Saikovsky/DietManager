@@ -7,7 +7,9 @@
 #include "utils/MealProvider.hpp"
 #include "utils/Logger.hpp"
 #include "MainWindow.hpp"
-
+#include "utils/MealSaver.hpp"
+#include <flatbuffers/util.h>
+#include <flatbuffers/idl.h>
 
 int main(int argc, char** argv)
 {
@@ -16,6 +18,8 @@ int main(int argc, char** argv)
 	Logger log;
 	log.setUpAndClean();
 
+	MealSaver ms;
+	
 	MainWindow mainWindow;
 	mainWindow.show();
 

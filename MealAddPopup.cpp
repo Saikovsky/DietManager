@@ -6,6 +6,7 @@
 #include <qspinbox.h>
 #include <qlineedit.h>
 #include <QHBoxLayout>
+#include "utils/Logger.hpp"
 
 
 
@@ -56,11 +57,18 @@ void MealAddPopup::createForm()
     addIngredientButton->resize(20, 20);
     addIngredientButton->setText("+");
 
+    removeIngredientButton = new QPushButton(this);
+    removeIngredientButton->resize(20, 20);
+    removeIngredientButton->setText("-");
+
     layout->addRow(new QLabel("Meal name:"), new QLineEdit);
     layout->addRow(new QLabel("Category"), mealCategory);
     layout->addRow(new QLabel("Ingredients:"));
     layout->addRow(ingredientLayout);
-    layout->addRow(addIngredientButton);
+    QHBoxLayout* buttonAddRemoveLayout = new QHBoxLayout(this);
+    buttonAddRemoveLayout->addWidget(addIngredientButton);
+    buttonAddRemoveLayout->addWidget(removeIngredientButton);
+    layout->addRow(buttonAddRemoveLayout);
     formGroupBox->setLayout(layout);
 
    
@@ -70,6 +78,7 @@ void MealAddPopup::createForm()
     */
 
     QObject::connect(addIngredientButton, SIGNAL(pressed()), this, SLOT(addItem()));
+    QObject::connect(removeIngredientButton, SIGNAL(pressed()), this, SLOT(removeItem()));
 }
 
 void MealAddPopup::addIngredientRow(QHBoxLayout* ingredientLayout)
@@ -89,6 +98,17 @@ void MealAddPopup::addIngredientRow(QHBoxLayout* ingredientLayout)
     ingredientLayout->addWidget(comboUnit);
 }
 
+void MealAddPopup::removeItem()
+{
+    Logger log;
+    if (ingredientCounter > 0)
+    {
+        log.info("We have currently " + std::to_string(ingredientCounter));
+        ingredientCounter--;
+        layout->removeRow(layout->rowCount() - 2);
+    }      
+}
+
 void MealAddPopup::addItem()
 {
     QHBoxLayout* ingredientLayout = new QHBoxLayout(this);
@@ -98,20 +118,8 @@ void MealAddPopup::addItem()
 
 void MealAddPopup::cleanUp()
 {
-    //Absolute positions
-    /*
-    uint8_t lowerLimit = layout->rowCount()-(ingredientCounter+1);
-    uint8_t upperLimit = layout->rowCount() - 2;
-    //Has to be lower than rowCount and since "+" is last currently
-    for (auto i = upperLimit; i >= lowerLimit; i--)
-    {
-        layout->removeRow(i);
-    }
-    
-    */
     for (auto i = layout->rowCount() - 1; i >= 0; i--)
         layout->removeRow(i);
     ingredientCounter = 0;
     createForm();
-    
 }
